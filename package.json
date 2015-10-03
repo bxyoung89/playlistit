@@ -1,0 +1,30 @@
+{
+  "name": "playlistit",
+  "version": "1.0.0",
+  "description": "A site that turns reddits into playlists",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bxyoung89/playlistit.git"
+  },
+  "author": "Broderick Young",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/bxyoung89/playlistit/issues"
+  },
+  "homepage": "https://github.com/bxyoung89/playlistit",
+  "private": true,
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "scripts": {
+    "start": "node server/app.js",
+    "stop": "taskkill -f /IM node.exe"
+  }
+}
