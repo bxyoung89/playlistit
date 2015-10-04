@@ -6,5 +6,25 @@
 	</head>
 	<body>
 		Hello world!
+		<div>
+			<button id="get-button">Get Posts from /r/futurefunk</button>
+		</div>
+		<div id="results">
+
+		</div>
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#get-button").click(function(){
+
+					$.post("/api/getLinks", {
+						subReddit: "futurefunk",
+						domain: "soundcloud.com"
+					}, function(data){
+						$("#results").html(JSON.stringify(data));
+					}, "json")
+				});
+			});
+		</script>
 	</body>
 </html>

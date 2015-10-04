@@ -4,7 +4,8 @@
   "description": "A site that turns reddits into playlists",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/app.js",
+    "stop": "taskkill -f /IM node.exe"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,12 @@
   "homepage": "https://github.com/bxyoung89/playlistit",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "^4.13.3"
   },
   "devDependencies": {
-    "grunt": "^0.4.5"
-  },
-  "scripts": {
-    "start": "node server/app.js",
-    "stop": "taskkill -f /IM node.exe"
+    "grunt": "^0.4.5",
+    "raw.js": "^0.4.0",
+    "sugar": "^1.4.1"
   }
 }
