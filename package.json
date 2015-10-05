@@ -25,6 +25,8 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "raw.js": "^0.4.0",
+    "request": "^2.64.0",
+    "soundcloud-node": "0.0.10",
     "sugar": "^1.4.1"
   }
 }
